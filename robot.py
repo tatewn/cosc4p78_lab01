@@ -380,6 +380,9 @@ def execute_ai_move_on_board(board_index):
     root.after(2000, step1_cube_default)
 
 def open_tictactoe():
+    global tictactoe_game_counter
+    tictactoe_game_counter = -1
+
     ttt_win = tk.Toplevel(root)
     ttt_win.title("Tic-Tac-Toe")
     ttt_win.resizable(False, False)
